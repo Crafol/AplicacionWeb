@@ -1,0 +1,30 @@
+# Estructura de la aplicacion
+
+## General
+
+### Ejecucion de la aplicacion:
+
+index.html
+    funciones.js
+    formularios.js
+    aplicacion.js
+    -> aplicacion.iniciar();
+
+### Carga de formulario/ventana
+
+aplicacion.cargaFrm('frmNombre', contenedor);
+
+### formulario de ejemplo
+// inicio frmNombre.html
+<script src='modelos/modNombre.js'></script>
+<div id='contenedorNombre'></div>
+<script>
+    kendo.bind($("#contenedorNombre"), modeloNombre);
+</script>
+// fin
+
+
+El archivo **index.html** es el primero en cargarse
+
+
+

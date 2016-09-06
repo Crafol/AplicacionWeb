@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+    Esta es la venta principal de la aplicacion. En esta ventana se dispone la 
+estructura general y el script principal app.js, asi como los js generales que 
+se utilizan en toda la aplicacion.
+-->
+<html class="k-webkit k-webkit51">
+    <head>
+        
+        <title>Aplicación</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+        <link href="estilos/kendo/kendo.common-material.min.css" rel="stylesheet" type="text/css"/>
+        <link href="estilos/kendo/kendo.material.min.css" rel="stylesheet" type="text/css"/>
+        <link href="estilos/kendo/kendo.common.min.css" rel="stylesheet" type="text/css"/>
+        <link href="estilos/aplicacion.css" rel="stylesheet" type="text/css"/>
+        <link href="estilos/kendo/kendo.default.min.css" rel="stylesheet" type="text/css"/>
+        
+        <script src="librerias/jquery.min.js" type="text/javascript"></script>
+        <script src="librerias/kendo/kendo.core.min.js"></script>
+        <script src="librerias/kendo/kendo.all.min.js"></script>
+        
+        <script src="scripts/aplicacion.js" type="text/javascript"></script>
+        
+        <script src="librerias/kendo/content/shared/js/console.js"></script>
+        
+    </head>
+    <body>
+        <div class="demo-section k-content">
+            <div id="pantalla" >
+                <p>Algo lindo para escribit aca :)</p>
+                <!-- Esta es la ventana principal, todo se carga aqui -->
+            </div>
+            <div style="padding-top: 2em;">
+                <h4>Consola</h4>
+                <div class="console"></div>
+            </div>
+        </div>    
+        <script>
+            $(document).ready(function(){
+                var pantalla = $("#pantalla");
+                aplicacion.iniciar(pantalla);
+            });
+        </script>
+    </body>
+</html>
